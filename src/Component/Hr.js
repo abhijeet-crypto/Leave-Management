@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { leave } from "../Auth/db";
 import UpdateLeaveCard from "./UpdateLeaveCard";
 
-const Manager = () => {
+const Hr = () => {
   const manager = useSelector((store) => store.user);
   const [temp, setTemp] = useState(leave.leaves);
   return (
@@ -13,7 +13,7 @@ const Manager = () => {
       <div className="flex justify-center flex-col">
         <div className="flex pt-5 justify-center text-xl text-blue-700">
           Hey <p className="font-bold px-2 text-red-500 ">{manager.name}</p>
-          Welcome to Manager Dashboard:
+          Welcome to Hr Dashboard:
         </div>
         <div className=" flex justify-center py-5 text-2xl">
           All employee leaves Details{" "}
@@ -29,4 +29,4 @@ const Manager = () => {
   );
 };
 
-export default Manager;
+export default Hr;

@@ -6,6 +6,7 @@ import Employee from "./Employee";
 import Manager from "./Manager";
 import { useSelector } from "react-redux";
 import Error from "./Error";
+import Hr from "./Hr";
 
 const Body = () => {
   const role = useSelector((store) => store?.user?.role);
@@ -26,6 +27,10 @@ const Body = () => {
     {
       path: "/manager",
       element: role === "Manager" ? <Manager></Manager> : <Error></Error>,
+    },
+    {
+      path: "/hr",
+      element: role == "Hr" ? <Hr></Hr> : <Error></Error>,
     },
   ]);
 

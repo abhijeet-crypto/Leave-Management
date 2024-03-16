@@ -22,11 +22,25 @@ export const User = {
       id: 3,
     },
     {
-      username: "Abhijeet",
-      email: "abhijeet@gmail.com",
-      password: "Abhijeet@123",
+      username: "Employee",
+      email: "employee@gmail.com",
+      password: "Employee@123",
       role: "Employee",
       id: 4,
+    },
+    {
+      username: "Manager",
+      email: "manager@gmail.com",
+      password: "Manager@123",
+      role: "Manager",
+      id: 5,
+    },
+    {
+      username: "Hr",
+      email: "hr@gmail.com",
+      password: "Hr@123",
+      role: "Hr",
+      id: 5,
     },
   ],
 };
@@ -40,6 +54,8 @@ export const leave = {
       numberOfDays: "2",
       leaveType: "Earned Leave",
       status: "Approved",
+      reason: "Feaver from 2 days",
+      leaveId: 100,
     },
     {
       username: "Srihitha",
@@ -49,6 +65,8 @@ export const leave = {
       leaveType: "Earned Leave",
       status: "Pending",
       id: 4,
+      reason: "Family Trip",
+      leaveId: 101,
     },
     {
       username: "Srihitha",
@@ -58,6 +76,8 @@ export const leave = {
       leaveType: "Sick leave",
       status: "Approved",
       id: 3,
+      reason: "Personal problem",
+      leaveId: 102,
     },
     {
       username: "Suchi",
@@ -67,6 +87,8 @@ export const leave = {
       leaveType: "Earned Leave",
       status: "Approved",
       id: 4,
+      reason: "An unexpected family wedding in a distant location",
+      leaveId: 103,
     },
     {
       username: "Divya",
@@ -76,6 +98,8 @@ export const leave = {
       leaveType: "Sick leave",
       status: "Approved",
       id: 5,
+      reason: "Parent-teacher conference",
+      leaveId: 105,
     },
     {
       username: "Divya",
@@ -85,6 +109,8 @@ export const leave = {
       leaveType: "Earned Leave",
       status: "Pending",
       id: 6,
+      reason: "Graduation ceremony",
+      leaveId: 106,
     },
     {
       username: "Divya",
@@ -94,6 +120,8 @@ export const leave = {
       leaveType: "Earned Leave",
       status: "Pending",
       id: 7,
+      reason: "Need a break",
+      leaveId: 107,
     },
     {
       username: "Suchi",
@@ -103,6 +131,8 @@ export const leave = {
       leaveType: "Earned Leave",
       status: "Pending",
       id: 8,
+      reason: "Death in the family or friend",
+      leaveId: 108,
     },
     {
       username: "Srihitha",
@@ -112,6 +142,8 @@ export const leave = {
       leaveType: "Sick leave",
       status: "Pending",
       id: 9,
+      reason: "Visit Temple",
+      leaveId: 109,
     },
     {
       username: "Srihitha",
@@ -121,6 +153,8 @@ export const leave = {
       leaveType: "Sick leave",
       status: "Pending",
       id: 10,
+      reason: "Traffic Jam",
+      leaveId: 110,
     },
   ],
 };

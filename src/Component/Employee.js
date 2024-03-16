@@ -1,11 +1,13 @@
 import React, { useRef, useState } from "react";
 import Navbar from "./Navbar";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import LeaveCard from "./LeaveCard";
 import { leave } from "../Auth/db";
+import { addToLeaves } from "../Utils/allLeavesSlice";
 
 const Employee = () => {
   //   const [temp, setTemp] = useState(leave.leaves);
+  const dispatch = useDispatch();
   const [temp, setTemp] = useState(leave.leaves);
   const data = useSelector((store) => store.user);
   const userName = data?.name;
@@ -23,6 +25,9 @@ const Employee = () => {
       leaveType: formRef.current.leaveType.value,
       status: "Pending",
     };
+
+    dispatch(addToLeaves());
+
     setTemp([...temp, ndata]);
     leave.leaves.push(ndata);
 
