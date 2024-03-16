@@ -30,13 +30,9 @@ const Body = () => {
   ]);
 
   return (
-    <div className="bg-gradient-to-l from-purple-500 w-screen h-screen">
+    <div>
       <RouterProvider router={approuter}></RouterProvider>
     </div>
-    // <div className="font-mono bg-gradient-to-bl from-purple-800">
-    //   <Navbar></Navbar>
-    //   <Home></Home>
-    // </div>
   );
 };
 

@@ -47,8 +47,8 @@ export const leave = {
       toDate: "2023-11-27",
       numberOfDays: "4",
       leaveType: "Earned Leave",
-      status: "Approved",
-      id: 2,
+      status: "Pending",
+      id: 4,
     },
     {
       username: "Srihitha",

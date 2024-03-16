@@ -14,7 +14,7 @@ const Auth = (e, p) => {
     }
     // console.log(e, p);
   });
-  console.log(flag, role, id);
+  //   console.log(flag, role, id);
   if (!flag) return null;
 
   return { role: role, id: id };

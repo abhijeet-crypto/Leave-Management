@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import { Auth } from "../Auth/Auth";
 import { useDispatch } from "react-redux";
 import { addUser } from "../Utils/userSlice";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const dispatch = useDispatch();
@@ -15,7 +15,7 @@ const Login = () => {
 
   const handelButtonClick = () => {
     const message = Auth(email.current.value, password.current.value);
-    console.log(message);
+    // console.log(message);
     if (message == null) {
       setErrorMessage("Invalid email or Password");
       return;
